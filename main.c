@@ -53,7 +53,6 @@ Node **load_file(const char *filename, Node **list) {
         // Copy line to `new_node` and append `new_node` to `list`
         // YOUR CODE HERE
         // MIN KODE
-        // Kopiér teksten ind i nodens data (sørg for nul-terminering)
         strncpy(*data, line, TRACK_TITLE_SIZE);
         (*data)[TRACK_TITLE_SIZE - 1] = '\0';
 
@@ -118,3 +117,4 @@ int main() {
     insert_at(&playlist, 3, &node);
     save_file(PLAYLIST_OUT_PATH, playlist);
 }
+
